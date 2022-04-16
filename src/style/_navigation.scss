@@ -1,0 +1,50 @@
+.navigation{
+    margin: 50px 0px;
+    display: flex;
+    
+    a{
+        position: relative;
+        margin: 5px 10px;
+        padding: 0px;
+    }
+   .active{
+        &::after{
+            content:"";
+            width: 85%;
+            height: 4px;
+            position: absolute;
+            background-color: rgb(100, 79, 150) ;
+            bottom: 1;
+            top: 100%;
+            left: 50%;
+            transform:translateX(-50%);
+        } 
+    }
+    .Connection{
+        background-color: $color-1;
+        height: 40px;
+        width: 15%;
+        padding: 10px;
+        border-radius: 30px;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .Contact{
+        background-color: $color-1;
+        height: 40px;
+        width: 15%;
+        padding: 10px;
+        border-radius: 30px;
+        text-align: center;
+        justify-items: center;
+
+    }
+    .Connection:hover{
+        background-color: $color-2
+    }
+    .Contact:hover{
+        background-color: $color-2
+    }
+
+}
